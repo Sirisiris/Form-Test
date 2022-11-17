@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(90deg, #b5e0d2, #ffaf79, #ffd3b6, #b5e0d2);
+    background-size: 500%;
+    animation: ani-bck 25s ease-in-out infinite;
+    color: #00182e;
+  }
+  
+  @keyframes ani-bck {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  #navbar {
+    padding-bottom: 2rem;
+  }
+  
+  /* ----- Contenedores ------ */
+  
+  .content {
+    background-color: aliceblue;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 70rem;
+    height: 45rem;
+  }
+  
+  .content-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: grid;
+  }
+  
+  .content-text {
+    padding: 2rem;
+    color: #00182e;
+  }
+  
+  .content-info {
+    padding-bottom: 2.5rem;
+  }
+  
+  .content-aside > img {
+    width: 100%;
+    max-width: 30rem;
+    padding: 4rem 1rem 1rem 1rem;
+  }
+  
+  .content-survey {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 3rem 3rem 3rem;
+    color: #00182e;
+  }
+  
+  .survey .form {
+    width: 50rem;
+  }
+  
+  .q1 > h3,
+  .q2 > h3,
+  .q3 > h3 {
+    margin-bottom: 1rem;
+  }
+  .q1 {
+    display: block;
+  }
+  
+  .q2 {
+    display: none;
+  }
+  
+  .q3 {
+    display: none;
+  }
+  
+  .form {
+    display: none;
+  }
+  
+  .back {
+    display: block;
+  }
+  
+  /* ----- Form ----- */
+  
+  .form-title {
+    font-size: 3rem;
+  }
+  
+  .form1-container {
+    width: 30rem;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px rgba(255, 255, 255, 0.3) solid;
+    padding: 2rem;
+    color: rgb(35, 10, 36);
+  }
+  
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form2-container {
+    width: 30rem;
+    background-color: rgb(65, 26, 66);
+    padding: 2rem;
+  }
+  
+  .term {
+    display: flex;
+    gap: 0.4rem;
+  }
+  
+  /* ----- Inputs ----- */
+  
+  .input-terms {
+    font-size: 0.8rem;
+    padding: 0.8rem;
+    accent-color: #00182e;
+  }
+  
+  .input-bx {
+    position: relative;
+    width: 300px;
+    margin: 0.3rem;
+  }
+  .input-bx input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #7f8fa6;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    transition: 0.6s;
+  }
+  
+  .input-bx span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    font-size: 1rem;
+    color: #7f8fa6;
+    pointer-events: none;
+    transition: 0.6s;
+  }
+  .input-bx input:valid ~ span,
+  .input-bx input:focus ~ span {
+    color: #00182e;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0 10px;
+    background: #fff;
+    letter-spacing: 0.1rem;
+  }
+  
+  .input-bx input:valid,
+  .input-bx input:focus {
+    color: #00182e;
+    border: 2px solid #00182e;
+  }
+  
+  /* ----- Buttons ----- */
+  
+  .button-survey {
+    width: 12rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #5a84a2;
+    cursor: pointer;
+    border-radius: 40px;
+    border: 0;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+      -2px -2px 12px rgba(255, 255, 255, 0.7),
+      inset 2px 2px 4px rgba(255, 255, 255, 0.3), 2px 2px 8px rgba(0, 0, 0, 0.35);
+  }
+  .button-survey:hover {
+    box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+      inset -2px -2px 12px rgba(255, 243, 238, 0.7),
+      inset 2px 2px 4px rgba(255, 244, 237, 0.3),
+      inset 2px 2px 8px rgba(89, 24, 0, 0.35);
+    background-color: hsl(24, 100%, 90%);
+    color: #00182e;
+    font-weight: 800;
+  }
+  
+  .button-survey:active .button-survey:focus {
+    box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+      inset -2px -2px 12px rgba(255, 243, 238, 0.7),
+      inset 2px 2px 4px rgba(255, 244, 237, 0.3),
+      inset 2px 2px 8px rgba(89, 24, 0, 0.35);
+    background-color: hsl(24, 100%, 71%);
+    color: #00182e;
+    font-weight: 800;
+  }
+  
+  .button-back {
+    background-color: #ffaf79;
+    margin-top: 2rem;
+    padding-top: 0.1rem;
+    border: 0;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .button-back:hover {
+    background-color: #ff934a;
+    transition: 0.5s;
+  }
+  
+  .button-submit {
+    background-color: #ffaf79;
+    padding: 0.5rem;
+    border: 0;
+    width: 5rem;
+    border-radius: 20px;
+    transition: 1s;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  
+  .button-submit:hover {
+    background-color: #ff7b22;
+    transition: 1s;
+  }
+  
+  /* ----- Decoraciones ----- */
+  
+  hr {
+    border: 1px dashed #ffaf79;
+    border-radius: 5px;
+  }
+  
+  .high {
+    line-height: 0px;
+    height: 0.5em; /* because em is a relative unit this will work for all sizes*/
+    display: inline-block;
+    padding: 0 5px;
+    margin: 0 -5px;
+    background-color: #ffaf79;
+  }
+  

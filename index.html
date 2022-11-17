@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar"><a href="/">
+      <img
+        src="./media/logo.png"
+        width="200"
+        alt=""
+        id="navbar-logo"
+      /></a>
+    </nav>
+
+    <main class="content">
+        <div class="content-text">
+        <h1 class="content-title"><span class="high">Gracias</span> por confiar en nosotros.</h1>
+        <p class="content-info">
+        Te agradecemos que respondas este breve cuestionario para facilitar tu trámite.</p> 
+        <hr>
+</div>
+        <div class="content-container">
+      <aside class="content-aside">
+        <img src="./media/house.png" alt="" />
+      </aside>
+      <section class="content-survey">
+        <div class="q1">
+          <h3>¿Eres propietario de tu vivienda?</h3>
+          <ul>
+            <li><button class="button-survey" id="q1-1">Sí</button></li>
+            <li><button class="button-survey" id="q1-2">No</button></li>
+          </ul>
+        </div>
+
+        <div class="q2">
+          <h3>¿Cuál es tu tipo de vivienda?</h3>
+          <ul>
+            <li><button class="button-survey" id="q2-1">Casa unifamiliar</button></li>
+            <li><button class="button-survey" id="q2-2">Piso</button></li>
+          </ul>
+          <ul><button class="button-back" id="back1"><img src="./media/back-icon.png" alt="return icon" width="35"></button></ul>
+        </div>
+
+        <div class="q3">
+          <h3>
+            ¿Cuánto es aproximadamente tu gasto promedio mensual de la factura
+            de la luz?
+          </h3>
+          <ul>
+            <li><button class="button-survey" id="q3-1">30€</button></li>
+            <li><button class="button-survey" id="q3-2">50€</button></li>
+            <li><button class="button-survey" id="q3-3">80€</button></li>
+            <li><button class="button-survey" id="q3-4">100€</button></li>
+            <li><button class="button-survey" id="q3-5">+100€</button></li>
+          </ul>
+          <ul><button class="button-back" id="back2"><img src="./media/back-icon.png" alt="return icon" width="35"></button></ul>
+        </div>
+
+      </section>
+      <section id="form" class="form">
+        <h2 class="form-title">Formulario</h2>
+
+        <form class="form-content" name="accept" action="#" onsubmit="return acceptTerms()">
+          <div class="input-bx">
+            <input type="text" id="fname" name="fname" required="required" />
+            <span>Nombre</span>
+          </div>
+          <div class="input-bx">
+            <input type="text" id="lname" name="lname"  required="required" />
+            <span>Apellidos</span>
+          </div>
+          <div class="input-bx">
+            <input type="number" id="cp" name="cp" required="required" />
+            <span>Código Postal</span>
+          </div>
+          <div class="input-bx" id="mail">
+            <input type="text" id="mail" name="email" required="required" />
+            <span>Email</span>
+          </div>
+          <div class="input-bx" id="phone">
+            <input type="number" id="phone" name="phone" required="required" />
+            <span>Teléfono</span>
+        </div>
+            <div class="input-terms">
+            <input type="radio" name="terms" value="aceptado" />
+            <label>Acepto la política de privacidad y los términos y condiciones.</label>
+    </div>
+            <input class="button-submit" type="submit" value="Enviar"/>
+        </form>
+      </section>
+    </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
